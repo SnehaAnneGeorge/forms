@@ -1,0 +1,68 @@
+<DOCTYPE!HTML>
+<html>
+<head>
+<title>VIT STUDENT INFO</title>
+</head>
+<body style="background-color:azure;">
+<img src="/home/student1/Downloads/vitlogo.png" alt="Couldnt load image" width="270" height="75">
+<h2>Enter student details</h2>
+<form action="file:///home/student1/Desktop/22BCE1985/return.html" target="_self">
+<input type="button" onclick="alert('Welcome!')" value="Click Me!"><br><br>
+<label for="datemin">Enter date of joining:</label>
+  <input type="date" id="datemin" name="datemin" min="2007-01-01" max="2022-01-01"><br><br>
+<label for "fname">First Name:</label>
+<input type="text" id="fname" name="fname" autofocus required placeholder="Enter the first name"><br><br>
+<label for "lname">Last Name:</label>
+<input type="text" id="lname" name="lname" required placeholder="Enter the last name"><br><br>
+<label for="pwd">Enter Password:</label>
+<input type="password" id="pwd" name="pwd" required minlength="8" placeholder="Enter the password"><br><br>
+<input type="hidden" id="Comepetitionid" name="Competitionid" value="1234">
+<p><strong>Note:</strong> The hidden field(Competition id) is not shown to the user, but the data is sent when the form is submitted.</p>
+<label for "phno">Phone Number:</label>
+<input type="text" id="phno" name="phno" required maxlength="12" placeholder="Enter the phone number" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"><br><br>
+<p><strong>Note:</strong> The format for enterring the phone number is 12-3456-7890</p>
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email" required placeholder="Enter the emailid"><br><br>
+<label for="linkedin">Add your linkedin url:</label>
+<input type="url" id="linkedin" name="linkedin" required placeholder="Enter linkedin url"><br><br>
+<label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+<label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+<label for="favcolor">Select your favorite color for jersey:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+<label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+<label for="vol">BMI(between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
+<p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="1">
+  <label for="age1">18</label><br>
+  <input type="radio" id="age2" name="age" value="2">
+  <label for="age2">19</label><br>
+  <input type="radio" id="age3" name="age" value="3">
+  <label for="age3">20</label><br><br>
+<p>Please select your desired sports:</p>
+  <input type="checkbox" id="sport1" name="sport1" value="Badminton">
+  <label for="sport1"> Badminton</label><br>
+  <input type="checkbox" id="sport2" name="sport2" value="Swimming">
+  <label for="sport2">Swimming</label><br>
+  <input type="checkbox" id="sport3" name="sport3" value="Football">
+  <label for="sport3">Football</label><br><br>
+<label for="competitionweek">Select the competition week:</label>
+  <input type="week" id="competitionweek" name="competitionweek">
+<label for="competition">Competition date:</label>
+  <input type="date" id="competition" name="competition"><br><br>
+<p>The time slots for the competition are open from <time>10:00</time> to <time>21:00</time>.Please specify desired starting time slot.Each slot is for 2 hrs.</p>
+<label for="slot">Select a time slot:</label>
+  <input type="time" id="slot" name="slot"><br><br>
+<label for="certificate">Upload your certificate:</label>
+  <input type="file" id="certificate" name="certificate"><br><br>
+<label for="querysearch">Query Search Q:</label>
+  <input type="search" id="querysearch" name="querysearch"><br><br>
+<input type="submit" value="Submit"><br><br>
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>
+
